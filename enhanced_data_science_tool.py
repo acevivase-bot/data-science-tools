@@ -258,14 +258,14 @@ def load_data_section():
         )
 
     with col2:
-        # if data_source == "📁 Upload File":
-        #     st.markdown("""
-        #     <div class="upload-area">
-        #         <h3>📁 Upload Your Dataset</h3>
-        #         <p>Drag and drop your file here or click to browse</p>
-        #         <small>Supported formats: CSV, Excel (XLSX), JSON | Max size: 200MB</small>
-        #     </div>
-        #     """, unsafe_allow_html=True)
+        if data_source == "📁 Upload File":
+            st.markdown("""
+            <div class="upload-area">
+                <h3>📁 Upload Your Dataset</h3>
+                <p>Drag and drop your file here or click to browse</p>
+                <small>Supported formats: CSV, Excel (XLSX), JSON | Max size: 200MB</small>
+            </div>
+            """, unsafe_allow_html=True)
 
             uploaded_file = st.file_uploader(
                 "Choose a file",
