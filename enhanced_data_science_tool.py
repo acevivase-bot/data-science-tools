@@ -176,7 +176,7 @@ st.markdown("""
         background: #343a40;
         color: white;
         padding: 2rem;
-        border-radius: 5px;
+        border-radius: 10px;
         text-align: center;
         margin-top: 3rem;
     }
